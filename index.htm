@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="all">
+        <div class="text-input">
+            <h1>ÖLKƏ AXTARIŞI</h1>
+            <input type="text" id="search" oninput="go()" placeholder="Search by country name" />
+        </div>
+        <div class="select">
+            <div class="range">
+                <span></span>
+            </div>
+            <select id="regionSelect" onchange="getRegionCountries()">
+                    <option value="">All</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </div>
+    <div id="flags"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
